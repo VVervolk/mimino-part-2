@@ -1,0 +1,49 @@
+<div data-popup-target="price" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button type="button" class="popup__close close-popup">
+        <svg class="close-button__icon">
+          <use href="./images/icons-svg.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="popup__title">Ціни на номер</h2>
+      <form class="form" autocomplete="off">
+        <div class="form__pos select form__pos--room">
+          <select class="js-select input" name="room" id="category">
+            <option class="select__item" value="double-lux">
+              Двомісний номер
+            </option>
+            <option class="select__item" value="double">
+              Двомісний номер люкс
+            </option>
+            <option class="select__item" value="triple">
+              Трьохмісний номер
+            </option>
+          </select>
+          <label class="label label--select" for="category"
+            >Категорія номеру</label
+          >
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask-days"
+            type="text"
+            id="number"
+            placeholder=""
+          />
+          <label class="label" for="number">Кількість ночей</label>
+        </div>
+
+        <div class="form__pos">
+          <p class="input price">1000</p>
+          <span class="label">грн</span>
+        </div>
+
+        <button class="button__form-booking" type="submit">
+          Забронювати номер
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

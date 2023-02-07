@@ -1,0 +1,77 @@
+<div data-popup-target="presentation" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button type="button" class="popup__close close-popup">
+        <svg class="close-button__icon">
+          <use href="./images/icons-svg.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="popup__title">Забронювати номер</h2>
+      <form class="form" autocomplete="off">
+        <div class="form__pos">
+          <input
+            class="input"
+            type="text"
+            id="name"
+            placeholder="Ваше ім’я"
+            required
+          />
+          <label class="label" for="name">На кого забронювати номер?</label>
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask"
+            type="text"
+            id="number"
+            placeholder=""
+          />
+          <label class="label" for="number">Номер телефону</label>
+        </div>
+
+        <div class="form__pos select form__pos--room">
+          <select class="js-select input input--room" name="room" id="category">
+            <option class="select__item" value="double-lux">
+              Двомісний номер
+            </option>
+            <option class="select__item" value="double">
+              Двомісний номер люкс
+            </option>
+            <option class="select__item" value="triple">
+              Трьохмісний номер
+            </option>
+          </select>
+          <label class="label label--select label--room" for="category"
+            >Категорія номеру</label
+          >
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask-01"
+            type="text"
+            id="date-arrive"
+            placeholder=""
+            required
+          />
+          <label class="label" for="date-arrive">Дата заїзду</label>
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask-01"
+            type="text"
+            id="date-leave"
+            placeholder=""
+            required
+          />
+          <label class="label" for="date-leave">Дата виїзду</label>
+        </div>
+
+        <button class="button__form-booking" type="submit">
+          Оформити бронювання
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div data-popup-target="table" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <button type="button" class="popup__close close-popup">
+        <svg class="close-button__icon">
+          <use href="./images/icons-svg.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="popup__title">Забронювати столик</h2>
+      <form class="form" autocomplete="off">
+        <div class="form__pos">
+          <input
+            class="input"
+            type="text"
+            id="name-table"
+            placeholder="Ваше ім’я"
+            required
+          />
+          <label class="label" for="name-table"
+            >На кого забронювати столик?</label
+          >
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask"
+            type="text"
+            id="number-table"
+            placeholder=""
+          />
+          <label class="label" for="number-table">Номер телефону</label>
+        </div>
+
+        <div class="form__pos select form__pos--table">
+          <select class="js-select input" name="room" id="category-table">
+            <option class="select__item" value="one-person">1</option>
+            <option class="select__item" value="two-person">2</option>
+            <option class="select__item" value="three-person">3</option>
+            <option class="select__item" value="four-person">4</option>
+          </select>
+          <label class="label label--select" for="category-table"
+            >Столик на яку кількість осіб?</label
+          >
+        </div>
+
+        <div class="form__pos">
+          <input
+            class="input js-inputmask-01"
+            type="text"
+            id="date-table"
+            placeholder=""
+            required
+          />
+          <label class="label" for="date-table">На яку дату бронювати?</label>
+        </div>
+
+        <button class="button__form-booking" type="submit">
+          Оформити бронювання
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+:root {
+  --even-section-background-color: #fffdee;
+  --odd-section-background-color: #f0ecd6;
+  --footer-color: #0e0c07;
+  --active-color: #f3c653;
+  --main-text-color: #7a7a7a;
+  --secondary-text-color: #c79002;
+  --subtitles-color: #000;
+  --titles-color: #fff;
+  --contacts-color: #828282;
+  --section-logo-text-color: #494848;
+  --comment-text-color: #b4b4b4;
+  --subtitle-text-color: #bababa;
+  --swiper-btn-white-color: #ffffff;
+  --swiper-btn-black-color: #000000;
+  --btn-text-color: #f3c653;
+  --gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  --hover-focus-color: #f3c653;
+  --half-transparent-icons: rgba(243, 198, 83, 0.7);
+  --address-color: #e5e5e5;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

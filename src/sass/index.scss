@@ -1,8 +1,11 @@
 @import './common';
-@import './base';
-@import './header';
-@import './example';
-@import './section/section';
+
+@import './abstracts/container';
+@import './abstracts/variables';
+
+@import './base/fonts';
+@import './base/reset-basis';
+@import './components/buttons';
 
 @import './footer';
-@import './modals';
+@import './layout/modals';

@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VVervolk/mimino-part-2"
+    "url": "git+https://vvervolk.github.io/mimino-part-2/.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VVervolk/mimino-part-2"
+    "url": "https://vvervolk.github.io/mimino-part-2/issues"
   },
   "dependencies": {
     "imask": "^6.4.3",

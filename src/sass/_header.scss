@@ -1,3 +1,111 @@
 .header {
+  min-width: 320px;
+  padding-top: 16px;
+  padding-bottom: 9px;
   //   position: fixed;
+  background-color: #000;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 33px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include tablet {
+    align-items: center;
+  }
+}
+
+.header__flex-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+
+  @include tablet {
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+.logo--header {
+  color: var(--titles-color);
+
+  font-size: 36px;
+  line-height: 1.1;
+
+  @include tablet {
+    font-size: 40px;
+  }
+  @include desktop {
+    font-size: 40px;
+  }
+}
+
+.header__link {
+  color: var(--active-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.header__contact {
+  color: var(--titles-color);
+
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+
+.header__contact-icon {
+  width: 24px;
+  height: 24px;
+
+  fill: var(--active-color);
+}
+
+.header__number {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+
+  position: absolute;
+  bottom: 0px;
+
+  @include desktop {
+    position: static;
+    align-items: center;
+  }
+}
+
+.socials__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--active-color);
 }

@@ -12,17 +12,13 @@
   justify-content: space-around;
 }
 
-.logo {
+.logo--footer {
   align-self: center;
 
   color: var(--active-color);
 
-  font-family: 'Film P3';
-  font-weight: 700;
   font-size: 40px;
   line-height: 1.08;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
 
   @media (min-width: 1024px) {
     font-size: 64px;

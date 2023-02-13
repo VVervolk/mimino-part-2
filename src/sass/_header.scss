@@ -1,9 +1,12 @@
 .header {
   min-width: 320px;
+  width: 100%;
+  z-index: 98;
   padding-top: 16px;
   padding-bottom: 9px;
-  //   position: fixed;
-  background-color: #000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
   @include tablet {
     padding-top: 24px;
@@ -17,6 +20,7 @@
   align-items: flex-end;
 
   @include tablet {
+    justify-content: normal;
     align-items: center;
   }
 }
@@ -32,6 +36,12 @@
   }
 }
 
+.header__flex-box--pos {
+  @include tablet {
+    margin-right: 69px;
+  }
+}
+
 .logo--header {
   color: var(--titles-color);
 
@@ -39,9 +49,11 @@
   line-height: 1.1;
 
   @include tablet {
+    margin-right: 207px;
     font-size: 40px;
   }
   @include desktop {
+    margin-right: 135px;
     font-size: 40px;
   }
 }
@@ -89,23 +101,4 @@
   @include tablet {
     display: block;
   }
-}
-
-.socials {
-  display: flex;
-  gap: 20px;
-
-  position: absolute;
-  bottom: 0px;
-
-  @include desktop {
-    position: static;
-    align-items: center;
-  }
-}
-
-.socials__icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--active-color);
 }

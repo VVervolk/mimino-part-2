@@ -1,0 +1,38 @@
+.section__about-rest {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/about-rest/about-rest_bcg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-rest__container {
+  padding: 24px 15px 40px 40px;
+}
+
+.about-rest__logo {
+  font-family: 'Film P3';
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: var(--titles-color);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-rest__rest-title{
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  margin-bottom: 20px;
+}
+
+.about-rest__descrip {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--subtitle-text-color);
+  margin-bottom: 20px;
+}

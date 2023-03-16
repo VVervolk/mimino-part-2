@@ -9,11 +9,13 @@
       <h2 class="popup__title">Ціни на номер</h2>
       <form class="form" autocomplete="off">
         <div class="form__pos select form__pos--room">
-          <select class="js-select input" name="room" id="category">
+          <select
+            class="js-select input js-select-price"
+            name="room"
+            id="category"
+          >
+            <option class="select__item" value="double">Двомісний номер</option>
             <option class="select__item" value="double-lux">
-              Двомісний номер
-            </option>
-            <option class="select__item" value="double">
               Двомісний номер люкс
             </option>
             <option class="select__item" value="triple">
@@ -36,7 +38,7 @@
         </div>
 
         <div class="form__pos">
-          <p class="input price">1000</p>
+          <p class="input price js-price">1000</p>
           <span class="label">грн</span>
         </div>
 

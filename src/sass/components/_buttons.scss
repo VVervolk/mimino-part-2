@@ -52,6 +52,14 @@
     background-color: var(--swiper-btn-white-color);
     border-color: var(--active-color);
   }
+
+  @include tablet {
+    width: 241px;
+  }
+
+  @include desktop {
+    width: 258px;
+  }
 }
 
 .button__booking--price {

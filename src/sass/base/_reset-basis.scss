@@ -3,7 +3,6 @@ body {
   color: var(--main-text-color);
   background-color: var(--even-section-background-color);
   font-family: 'Montserrat', sans-serif;
-  
 }
 
 html {
@@ -24,6 +23,7 @@ ol {
 }
 
 a {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
@@ -38,5 +38,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-

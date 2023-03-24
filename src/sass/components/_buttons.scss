@@ -1,5 +1,4 @@
 .button__form-booking {
-  margin-top: 20px;
   padding: 20px 40px;
 
   background-color: var(--swiper-btn-black-color);
@@ -31,6 +30,7 @@
 }
 
 .button__booking {
+  width: 241px;
   padding: 14px 24px;
 
   background: rgba(0, 0, 0, 0.4);
@@ -38,6 +38,7 @@
   border-radius: 25px;
 
   color: var(--active-color);
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -65,4 +66,44 @@
 .button__booking--price {
   width: 236px;
   background-color: var(--swiper-btn-black-color);
+}
+
+.swiper-btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (min-width: 1024px) {
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 36px;
+  }
+}
+.swiper-btn {
+  background-color: inherit;
+  border: transparent;
+  padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active,
+  &:focus {
+    fill: var(--active-color);
+  }
+  &:disabled {
+    fill: var(--titles-color);
+  }
+}
+.swiper-button-prev {
+  margin-right: 32px;
+}
+
+.link-prices {
+  display: block;
+}
+
+.swiper-btn--reverse-color {
+  fill: var(--swiper-btn-white-color);
+  &:disabled {
+    fill: transparent;
+  }
 }

@@ -1,9 +1,10 @@
 .section__about-rest {
+  min-width: 414px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../images/about-rest/about-rest_bcg-mobile.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    url('../images/about-rest/about-rest_bcg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .about-rest__container {
@@ -20,7 +21,7 @@
   margin-bottom: 12px;
 }
 
-.about-rest__rest-title{
+.about-rest__rest-title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -35,4 +36,11 @@
   letter-spacing: 0.02em;
   color: var(--subtitle-text-color);
   margin-bottom: 20px;
+}
+
+.btn-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
 }

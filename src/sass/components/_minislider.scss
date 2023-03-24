@@ -1,0 +1,100 @@
+// .minislider {
+//   // для кожного тут свої позначення
+//   margin-top: 32px;
+//   @media screen and (min-width: 1024px) {
+//     align-self: flex-end;
+//     // 32px
+//     margin-top: -32px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     margin-top: -127px;
+//   }
+//   .swiper {
+//     // тінь
+//     margin-top: -60px;
+//     padding-top: 60px;
+//     @media screen and (min-width: 414px) {
+//       margin-right: -15px;
+//     }
+//     @media screen and (min-width: 1024px) {
+//       margin-right: -20px;
+//       margin-left: -20px;
+//       padding-left: 20px;
+//       padding-right: 20px;
+//     }
+//   }
+//   .swiper-wrapper {
+//     @media screen and (min-width: 1024px) {
+//       max-width: 428px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       max-width: 548px;
+//     }
+//   }
+//   // спільне
+//   .swiper-slide {
+//     max-width: 245px !important;
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//     & .swiper-inner > img {
+//       object-fit: contain;
+//     }
+//     @media screen and (max-width: 1023px) {
+//       &.swiper-slide-next,
+//       &.swiper-slide-prev {
+//         opacity: 0.5;
+//       }
+//     }
+//     @media screen and (min-width: 1024px) {
+//       max-width: 194px !important;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       max-width: 254px !important;
+//     }
+//   }
+// }
+.slider {
+  width: 373px;
+  @include tablet {
+    width: 662px;
+  }
+  @include desktop {
+    width: 878px;
+  }
+}
+
+.swiper-slide {
+  width: 270px !important;
+  height: 270px;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 32px;
+  background-color: red;
+  transition: ease-in-out 0.5s;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-inner {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+.swiper-slide-next {
+  // краще виставляти у %
+  // зараз 17.3%  дорівнює 200px
+  //width: 200px !important;
+
+  width: 18% !important;
+  @include desktop {
+    width: 17.3% !important;
+  }
+}

@@ -1,0 +1,100 @@
+.details-of-rest {
+  min-width: 414px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../images/details-of-rest/background/details-of-rest-mobile.jpg');
+  @include retina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/details-of-rest/background/details-of-rest-mobile@2x.jpg');
+  }
+  @include tablet {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/details-of-rest/background/details-of-rest-tablet.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/details-of-rest/background/details-of-rest-tablet@2x.jpg');
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/details-of-rest/background/details-of-rest-desktop.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/details-of-rest/background/details-of-rest-desktop@2x.jpg');
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.details-of-rest__container {
+  padding: 24px 15px 40px 40px;
+  @include tablet {
+    padding: 48px 52px 40px 85px;
+  }
+}
+
+.details-of-rest__box-for-text {
+  padding-left: 100px;
+  margin-bottom: 48px;
+  @include tablet {
+    padding-left: 228px;
+    padding-right: 86px;
+    margin-bottom: 40px;
+  }
+}
+
+.details-of-rest__logo {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  color: var(--titles-color);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+}
+
+.details-of-rest__rest-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  margin-bottom: 20px;
+  @include tablet {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.details-of-rest__descrip {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--subtitle-text-color);
+}
+
+.btn-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  @include tablet {
+    position: absolute;
+    bottom: 108px;
+  }
+}

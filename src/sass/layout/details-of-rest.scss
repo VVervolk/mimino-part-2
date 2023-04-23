@@ -7,6 +7,7 @@
       url('../images/details-of-rest/background/details-of-rest-mobile@2x.jpg');
   }
   @include tablet {
+    padding-bottom: 406px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../images/details-of-rest/background/details-of-rest-tablet.jpg');
     @include retina {
@@ -31,23 +32,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
 }
 
 .details-of-rest__container {
-  padding: 24px 15px 40px 40px;
+  position: relative;
+
+  padding: 24px 0 40px 0;
   @include tablet {
-    padding: 48px 52px 40px 85px;
+    padding: 48px 52px 0 278px;
+  }
+  @include desktop {
+    padding-right: 330px;
   }
 }
 
 .details-of-rest__box-for-text {
   padding-left: 100px;
-  margin-bottom: 48px;
+  margin-bottom: 47px;
+  padding-right: 68px;
   @include tablet {
-    padding-left: 228px;
-    padding-right: 86px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    padding-right: 227px;
+    padding-right: 0;
   }
 }
 
@@ -93,8 +99,30 @@
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  margin-top: 32px;
   @include tablet {
     position: absolute;
-    bottom: 108px;
+    left: 25px;
+    bottom: -295px;
+    margin-top: 0;
+  }
+  @include desktop {
+    left: 60px;
+  }
+}
+
+.details-of-rest__slider-details {
+  transform: translateX(44px);
+  @include tablet {
+    transform: none;
+    position: absolute;
+
+    right: 50;
+    bottom: -366px;
+  }
+  @include desktop {
+    right: 52px;
+
+    bottom: -366px;
   }
 }

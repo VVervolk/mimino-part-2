@@ -1,0 +1,244 @@
+.room {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+}
+
+.tripleroom {
+  background-color: var(--odd-section-background-color);
+}
+
+.room__description {
+  display: flex;
+  flex-direction: column;
+
+  &.room__description--flex-end {
+    align-items: flex-end;
+  }
+}
+
+.room__subtitle {
+  //mobile screen
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-family: Times New Roman;
+  font-size: 20px;
+  line-height: 1.15;
+
+  color: var(--comment-text-color);
+
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4px;
+
+    font-size: 32px;
+  }
+}
+
+.room__logo {
+  //mobile screen
+  margin-bottom: 32px;
+
+  font-weight: 700;
+  font-family: Film P3;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  color: var(--section-logo-text-color);
+
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 62px;
+    font-size: 64px;
+    line-height: 1.08;
+  }
+
+  //desktop screen
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+
+  &.room__logo--translate {
+    transform: translateX(13px);
+  }
+}
+
+.room__title {
+  //mobile screen
+  margin-bottom: 12px;
+
+  font-family: Times New Roman;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: var(--subtitles-color);
+  text-transform: uppercase;
+
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    &.room__title--center {
+      align-self: flex-start;
+    }
+  }
+
+  //desktop screen
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+}
+
+.common {
+  text-transform: none;
+}
+
+.room__about {
+  //mobile screen
+
+  margin-bottom: 32px;
+  max-width: 258px;
+  height: 76px;
+  align-self: left;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 176px;
+    max-width: 439px;
+
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  //desktop screen
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 188px;
+    max-width: 400px;
+  }
+}
+
+// room main image
+
+.room__thumb {
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    transform: translateY(-94px);
+  }
+}
+
+.room__img {
+  margin-left: auto;
+  margin-bottom: 32px;
+
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+  //tablet screen
+  @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  &.room__img--left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+.room__container-about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  //tablet screen + desktop
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 44px;
+    &.room__container-about--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.room__slider {
+  position: static;
+  width: 263px;
+  margin-bottom: 20px;
+  transform: translateX(-15px);
+
+  @include tablet {
+    transform: translateX(0);
+    margin-bottom: 0;
+
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
+
+  &.room__slider--right {
+    margin-left: auto;
+    transform: translateX(15px);
+  }
+}
+
+.room__swiper {
+  width: 263px;
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
+}
+
+.room__swiper-btns {
+  @media (max-width: 1023px) {
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+}
+
+.room__box {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.room__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: center;
+  @include tablet {
+    margin-top: 41px;
+    align-self: flex-start;
+  }
+}

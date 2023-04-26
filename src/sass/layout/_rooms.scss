@@ -17,6 +17,22 @@
   background-color: var(--odd-section-background-color);
 }
 
+.room__container-about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  //tablet screen + desktop
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 44px;
+    &.room__container-about--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
 .room__description {
   display: flex;
   flex-direction: column;
@@ -92,9 +108,9 @@
     margin-bottom: 16px;
 
     font-size: 30px;
-    &.room__title--center {
-      align-self: flex-start;
-    }
+    // &.room__title--reverse {
+    //   align-self: flex-start;
+    // }
   }
 
   //desktop screen
@@ -112,10 +128,7 @@
 .room__about {
   //mobile screen
 
-  margin-bottom: 32px;
   max-width: 258px;
-  height: 76px;
-  align-self: left;
 
   font-weight: 600;
   font-size: 12px;
@@ -123,11 +136,17 @@
   letter-spacing: 0.02em;
 
   color: var(--main-text-color);
+  &.room__about--reverse {
+    max-width: 311px;
+    @include tablet {
+      max-width: 390px;
+    }
+  }
 
   //tablet screen
   @media screen and (min-width: 1024px) {
     margin-bottom: 176px;
-    max-width: 439px;
+    max-width: 416px;
 
     font-weight: 700;
     font-size: 16px;
@@ -136,22 +155,34 @@
   //desktop screen
   @media screen and (min-width: 1280px) {
     margin-bottom: 188px;
-    max-width: 400px;
+    max-width: 410px;
   }
 }
 
 // room main image
 
 .room__thumb {
+  margin-bottom: 32px;
   //tablet screen
   @media screen and (min-width: 1024px) {
-    transform: translateY(-94px);
+    position: absolute;
+    top: -96px;
+    right: 65px;
+    &.room__thumb--reverse {
+      left: 65px;
+    }
+  }
+  @include desktop {
+    top: -105px;
+    right: 95px;
+    &.room__thumb--reverse {
+      left: 95px;
+    }
   }
 }
 
 .room__img {
   margin-left: auto;
-  margin-bottom: 32px;
 
   border-radius: 2px;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -164,21 +195,6 @@
   &.room__img--left {
     margin-left: 0;
     margin-right: auto;
-  }
-}
-.room__container-about {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-  //tablet screen + desktop
-  @media screen and (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 44px;
-    &.room__container-about--reverse {
-      flex-direction: row-reverse;
-    }
   }
 }
 
@@ -201,6 +217,9 @@
   &.room__slider--right {
     margin-left: auto;
     transform: translateX(15px);
+    @include tablet {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -221,6 +240,12 @@
   }
 }
 
+.room__swiper-btns--reverse {
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
 .room__box {
   display: flex;
   flex-direction: column;
@@ -229,6 +254,9 @@
     gap: 20px;
     justify-content: space-between;
     flex-direction: row;
+    &.room__box--reverse {
+      flex-direction: row-reverse;
+    }
   }
 }
 
@@ -238,7 +266,10 @@
   gap: 16px;
   align-self: center;
   @include tablet {
-    margin-top: 41px;
+    margin-top: 42px;
     align-self: flex-start;
+  }
+  @include desktop {
+    margin-top: 72px;
   }
 }

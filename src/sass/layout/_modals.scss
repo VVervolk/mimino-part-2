@@ -162,7 +162,13 @@ body.lock {
 
 .input--room {
   @media (min-width: 1024px) {
-    margin-left: auto;
+    width: 100%;
+  }
+}
+
+.input--price {
+  @media (min-width: 1024px) {
+    width: 100%;
   }
 }
 
@@ -192,11 +198,11 @@ body.lock {
   margin-top: 8px;
 }
 
-.label--room {
-  @media (min-width: 1024px) {
-    margin-left: calc(((100% + 14px) / 2) + 12px);
-  }
-}
+// .label--room {
+//   @media (min-width: 1024px) {
+//     margin-left: calc(((100% + 14px) / 2) + 12px);
+//   }
+// }
 
 .form__pos.select {
   position: relative;

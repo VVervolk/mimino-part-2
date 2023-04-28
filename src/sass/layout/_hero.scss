@@ -309,7 +309,7 @@
   @include desktop {
     top: 38px;
     left: 1083px;
-    z-index: 2000;
+    z-index: 6;
   }
 }
 
@@ -334,7 +334,7 @@
 
 ////////////////////////
 .hero-room__text-box {
-  z-index: 100;
+  z-index: 5;
   margin-bottom: 17px;
 }
 .hero-room__title {
@@ -406,7 +406,7 @@
   // position: absolute;
   // bottom: 18px;
   display: flex;
-  z-index: 100;
+  z-index: 5;
   gap: 70px;
 
   align-items: center;
@@ -435,7 +435,7 @@
 }
 
 .hero-room__swiper {
-  z-index: 100;
+  z-index: 4;
   width: 100%;
   height: 100%;
 }
@@ -446,7 +446,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: 100;
+  z-index: 4;
   display: flex;
   justify-content: space-between;
   width: 100%;
